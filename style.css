@@ -1,135 +1,168 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-body{
+body {
     background-color: rgb(15, 15, 15);
-    /* color: #b3adad;; */
     color: white;
 }
-.header{
+
+.header {
     background-color: black;
     color: #808080;
     display: flex;
-    padding: 25px;
+    padding: 10px;
     justify-content: space-between;
+    align-items: center;
     font-size: larger;
     position: sticky;
     top: 0;
-
 }
 
+.nav__container {
+    display: flex; 
+}
 
-.nav__container{
+.nav__container ul {
     display: flex;
-    
-}
-.nav__container ul{
-    display: flex;
-}
-.nav__container ul{
     list-style-type: none;
 }
-.nav__container a{
+
+.nav__container li {
+    text-transform: uppercase;
+}
+
+.nav__container a {
     display: inline-block;
     padding:  0 25px;
     text-align: center;
     text-decoration: none;
     color: #b3adad;
-
 }
-/* main */
 
+.header__logo-sub {
+    text-transform: uppercase;
+}
+
+/* main */
 /* home container */
-.home__container{
+.home__container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 100%;
     padding: 100px 100px;
 }
-.main__description h1{
+
+.main__description h1 {
     padding-bottom: 20px;
+    text-transform: uppercase;
 }
-img{
+
+img {
     border-radius: 40%;
 }
 
 /* about section */
-.about__container{
+.about__container {
     padding-top: 100px;
     padding-bottom: 150px;
     height: 100%;
 }
 
-.about__heading{
+.about__heading {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.about__heading h1{
+.about__heading h2 {
     padding-bottom: 20px;
+    text-transform: uppercase;
 }
 
-.about__details__container{
+.about__details__container {
     display: flex;
     padding-top: 50px;
     justify-content: space-evenly;
     align-items: center;
-}
-.about__details{
+} 
+
+.about__details {
     width: 50%;
 }
 
-.about__skills{
+ul {
     display: flex;
-    /* flex-wrap: wrap; */
-    justify-content: space-around;
 }
 
-.about__skills__items{
+.about__skills__items {
     height: 20px;
     background-color: #615757;
     text-align: center;
     padding: 5px;
     margin: 5px;
+    text-transform: uppercase;
 }
+
+#about__skills__item3 {
+    text-transform: capitalize;
+}
+
+#about__skills__item3 span {
+    text-transform: capitalize;
+}
+
+#about__skills__item5 , #about__skills__item4 {
+    text-transform: capitalize;
+}
+
+#about__skills__item6 {
+    text-transform: none;
+}
+
+li {
+    list-style-type: none;
+}
+
 /* Education section */
-.education__container{
+.education__container {
     height: 100%;
-    margin-top: 100px;
-}
-.education__heading{
+} 
+
+.education__heading {
     text-align: center;
     padding-top: 100px;
 }
 
-.education__details__container{
+.education__heading h2 {
+    text-transform: uppercase;
+}
+
+.education__details__container {
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
-    
+    margin-top: 5px;
 }
-.education__details{
+
+.education__details {
     background-color: rgb(34, 37, 37);
-    padding:10px 0 50px 10px;
+    padding:10px 0 10px 10px;
     margin: 20px 200px;
 }
 
-.contact__heading{
+.contact__heading {
     text-align: center;
     padding-top: 100px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
+}
+
+.contact__heading h2 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 /* form */
-
 .form__container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
     height: 60vh;
 }
 
@@ -171,12 +204,12 @@ img{
 .form-group input[type="submit"]:hover {
     background-color: #45a049;
 }
+
 .footer {
     background-color: #333;
     color: #fff;
     padding: 20px;
     text-align: center;
-    /* position: fixed; */
     left: 0;
     bottom: 0;
     width: 100%;

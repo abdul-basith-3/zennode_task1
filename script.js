@@ -1,6 +1,6 @@
 document.getElementById("myForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent form submission
-    
+    // Prevent form submission
+    event.preventDefault(); 
     // Display success message
     document.getElementById("successMessage").style.display = "block";
     document.getElementById("myForm").reset();
